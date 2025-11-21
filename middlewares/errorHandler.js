@@ -7,6 +7,7 @@ export default function errorHandler(err, req, res, next) {
       code: err.code,
       message: err.message,
       details: err.details,
+      stack: err.stack,
     });
   }
 
